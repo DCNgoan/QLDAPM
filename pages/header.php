@@ -33,3 +33,29 @@
 			   
 				  
 				   <?php
+				  		if(isset($_SESSION['dangky'])){
+					?>
+					   
+						<li><a href="index.php?quanly=thongtin"> Thông Tin</a></li>
+						<li> <a href="index.php?dangxuat=1">Đăng xuât</a></li>
+					<?php
+						}else{
+					?>
+						 <li> <a href="index.php?quanly=dangnhap">Đăng nhập</a></li>
+						 <li> <a href="index.php?quanly=dangky">Đăng ký</a></li>
+					<?php
+						}
+					?>
+					 
+					
+				   
+					<li> 
+						<Form method="POST" action="index.php?quanly=timkiem"> 
+							<input type="text" placeholder="sreach....." name="tukhoa">
+							<input type="submit" name="timkiem" value="Tìm Kiếm" style="background-color: #3374ed;">
+						</Form>
+					</li>
+					
+				</ul>
+	 </div>
+			</div>
