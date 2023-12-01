@@ -11,8 +11,6 @@
 		
 	}
 
-    
-    //them 
     if(isset($_POST['themgiohang'])){
 		//session_destroy();
 		$id=$_GET['idsanpham'];
@@ -45,6 +43,8 @@
 				$_SESSION['cart'] = $new_product;
 			}
 
+    //them 
+    
 		}
 		header('Location:../../../index.php?quanly=giohang');
 		
