@@ -19,4 +19,7 @@
 			$insert_order_details = "INSERT INTO tbl_cart_detail(id_sanpham,code_cart,soluongmua) VALUE('".$id_sanpham."','".$code_order."','".$soluong."')";
 			mysqli_query($connect,$insert_order_details);
 		}
+	}
+	header('Location:../../../index.php');
+	}
 ?>
