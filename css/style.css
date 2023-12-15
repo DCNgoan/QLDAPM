@@ -1,0 +1,375 @@
+body{
+    background-image: linear-gradient(to right,#8E44AD,#F5B041);
+}
+.wrapper{
+    width: 96%;
+    height: auto;
+    background-color: #f4e9e9;
+    margin: 5px;
+    border-radius: 5px;
+    transition: all 0.9s ease;
+}
+.header{
+    border-left: 4px solid #A569BD;
+    border-right: 3px solid #F5B041;
+    height: 60px;
+    left: 0;
+    border-bottom: 3px solid #8E44AD;
+    background-color: #ffffff;
+    /* border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; */
+    position: fixed;
+    width: 100%;
+    padding: 3px;
+    z-index: 1;
+    top: 0;
+    box-shadow: 0 0 25px rgb(74, 74, 79);
+    animation-name: down;
+    animation-duration: 0.7s;
+}
+.menu{
+    margin-top: 10px;
+    height: auto;
+ 
+    
+    border-radius: 15px;
+    background-color:  #0d9c9e;
+   
+    
+}
+ul.menu_list li > .menu_danhmuc{
+    display: none;
+    list-style: none;
+    
+}
+ul.menu_list li:hover .menu_danhmuc{
+    display: block;
+    position: absolute;
+
+
+}
+ul.menu_list {
+    position: relative;
+    margin: 0 auto;
+    list-style: none;
+    line-height: 25px;
+    display: flex;
+}
+ul.menu_list li {
+
+    border-radius: 5px;
+    margin: 7px;
+    padding: 5px;
+    background-color:  #ccf5ff;
+    
+    
+}
+
+ul.menu_list li:hover{
+    background-color: antiquewhite;
+}
+
+ul.menu_list li a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+   
+    color: #000;
+}
+.main{
+	
+	height: auto;
+	width: 100%;
+}
+.sidebar{
+    background-color:  #607ef7;
+    
+    height: 300px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+}
+ul.sidebar_list {
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    line-height: 25px;
+}
+ul.sidebar_list li {
+    
+    border-radius: 5px;
+    margin: 7px;
+    padding: 5px;
+    background-color:  #41b7f7;
+    
+}
+
+ul.sidebar_list li:hover{
+    background-color: #cd3df5;
+}
+
+ul.sidebar_list li a{
+  
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+
+.maincontent img{
+    width: 100%;
+    height: 100%;
+}
+.new_product{
+    background-color: #3df5f1;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin-bottom: 10px;
+
+}
+.new_product h3{
+    text-align: center;
+}
+
+/* Hiển thị sản phẩm */
+ul.product_list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+    
+}
+ul.product_list li img {
+    height: 300px;
+
+}
+
+ul.product_list li {
+    background-color: #3df5f1;
+    width: 19%;
+    border: 1px solid black;
+    margin: 5px;
+    float: left;
+   border-radius: 5px;
+    height: 420px;
+    margin-bottom: 50px;
+
+}
+ul.product_list li a {
+    text-decoration: none;
+}
+ul.product_list li img {
+    width: 100%;
+}
+p.price_product {
+    text-align: center;
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+}
+p.title_product {
+    text-align: center;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* FOOTER */
+.footer{
+   background-color: #8E44AD;
+    
+    height: 150px;
+    width: 100%;
+}
+.footer p{
+    text-align: center;
+}
+.clear{
+    clear: both;/* khong cho do , gat cai float left */
+}
+.show{
+    width: 100%;
+    height: 100%;
+}
+.show_new{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Mobie */
+@media screen and (min-width:600px){
+    .wrapper{
+        max-width: 100%;
+        
+    }
+    .menu{
+        max-width: 100%;
+        flex-direction: column;
+        text-align: center;
+        
+        clear: both;
+    }
+    .main:before,.main:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .main{
+        max-width: 100%;
+    }
+    
+    .sidebar{
+        width: 20%;
+        margin-top: 5px;
+        margin-left: 5px;
+        float: left;
+        flex-direction: column;
+        text-align: center;
+    }
+    .maincontent{
+        width: 78%;
+        margin-top:5px;
+        margin-left:5px;
+        float: right;
+    }
+   
+    
+
+}
+
+
+/* Desktop */
+@media screen and (min-width :1024px){
+    .wrapper{
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+}
+.ct7-title{
+    font-family: 'Dosis', sans-serif;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 7px;
+    margin-left: 2%;
+}
+
+.ct7-icon-title{
+    font-size: 35px;
+    margin-left: 10px;
+    color: #8E44AD;
+    
+}
+
+.content-7{
+    font-family: 'Dosis', sans-serif;
+    padding-bottom: 30px;
+    margin-left: 2%;
+}
+
+.ct7-card{
+    margin-top: 7px;
+    padding: 7px;
+    text-align: center;
+    width: 98%;
+    /* background-image: linear-gradient(to right,#8E44AD,#F5B041); */
+    background-image: linear-gradient(to right,#8E44AD,#F5B041);
+    border-radius: 7px;
+    color: #ffffff;
+    overflow: hidden;
+    transition: 0.6s;
+}
+
+.ct7-p1{
+    font-size: 27px;
+    font-weight: 650;
+}
+
+.ct7-p2{
+    color: #F5B041;
+}
+
+.ct7-imgg{
+    width: 120px;
+    height: 120px;
+    border: 4px solid #ffffff;
+    border-radius: 50%;
+    overflow: hidden;
+    margin:  auto;
+    margin-top: 20px;
+    transition: 0.9s;
+}
+
+.ct7-img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    transition: 0.9s;
+}
+
+
+
+
+
+
+.ct7-menu a i{
+    font-size: 37px;
+    color: #ffffff;
+    margin: 20px;
+    transition: 0.5s ease;
+}
+
+.ct7-fb:hover ,.ct7-ig:hover ,.ct7-mail:hover ,.ct7-git:hover   {
+    transform: scale(1.2,1.2);
+    color: #F5B041;
+}
+
+.ct7-mail:hover ,.ct7-git:hover{
+    transform: scale(1.2,1.2);
+    color: #8E44AD;
+}
+
+.ct7-bt:hover {
+    transform: scale(1.2,1.2);
+    color: #ffffff;
+}
+
+.ct7-bt{
+    width: 130px;
+    height: 35px;
+    background-image: linear-gradient(to right,#8E44AD,#F5B041);
+    color: #ffffff;
+    font-family: 'Dosis', sans-serif;
+    margin-bottom: 15px;
+    font-size: 20px;
+    border: 3px solid #ffffff;
+    transition: 0.6s ease;
+    border-radius: 50px;
+}
+
+.ct7-boder{
+    border: 3px #ffffff;
+    border-top: dashed;
+    border-bottom: dashed;
+}
+.btn{
+    /* Customize the button appearance */
+    background-color: #3498db; /* Màu xanh dương */
+    color: white;
+    border: none;
+    border-radius: 8px; /* Bo viền */
+    padding: 10px 18px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    cursor: pointer;
+
+   
+    
+  }
+  
+.btn:hover {
+    /* Add hover effect */
+    background-color: #c61acc; /* Màu xanh dương tối hơn khi hover */
+  }
+
